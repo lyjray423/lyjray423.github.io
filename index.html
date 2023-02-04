@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            button{margin: 5px;}
+        </style>
+    </head>
+    <body>
+        第一個數 : <input id="a" type="text" />
+        <br>
+        第二個數 : <input id="b" type="text">
+        <br>
+        <button onclick="sum()">+</button>
+        <button onclick="minus()">-</button>
+        <button onclick="mutiple()">*</button>
+        <button onclick="divide()">/</button>
+        <br>
+        <output id="c"></output>
+    <script>
+        function sum(){
+        var a = parseInt(document.getElementById('a').value); 
+        var b = parseInt(document.getElementById('b').value);
+        document.getElementById('c').value = a+b
+        }
+        function mutiple(){
+            var a = parseInt(document.getElementById('a').value); 
+            var b = parseInt(document.getElementById('b').value);
+            document.getElementById('c').value = a*b
+        }
+        function minus(){
+            var a = parseInt(document.getElementById('a').value); 
+            var b = parseInt(document.getElementById('b').value);
+            document.getElementById('c').value = a-b
+        }
+        function divide(){
+            var a = parseInt(document.getElementById('a').value); 
+            var b = parseInt(document.getElementById('b').value);
+            document.getElementById('c').value = a/b
+        }
+    </script>
+       
+     
+    </body>
+</html>
